@@ -37,6 +37,17 @@ public class PlayerListener implements Listener{
 				e.disallow(AsyncPlayerPreLoginEvent.Result.KICK_BANNED, msg);
 				return;
 			}
+			long current = System.currentTimeMillis();
+			long end = BanManager.getRestBannedTime(uuid);
+			if ((current < end) || (end == -1L)) {
+				String msg = Main.getFileManager().getMessagesFile().getMessage("CONIG.BANSYSTEM.TEMPBANPLAYER.BANSCREEN");
+				msg = msg.replace("%REASON%", BanManager.getReason(uuid));
+				msg = msg.replace("%TIME%", BanManager.getRemainingTime(uuid));
+		        e.disallow(AsyncPlayerPreLoginEvent.Result.KICK_BANNED, msg);
+				return;
+			}else{
+				e.allow();
+			}
 			return;
 		}
 		return;

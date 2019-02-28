@@ -1,8 +1,7 @@
 CONIG:
   BANSYSTEM:
     NOPERMISSION: '%PREFIX% &4Keine Berechtigung!'
-    NOMINECRAFTACCOUNT: '%PREFIX% &cEs existiert kein Minecraftaccount mit diesem
-      Namen!'
+    NOMINECRAFTACCOUNT: '%PREFIX% &cEs existiert kein Minecraftaccount mit diesem Namen!'
     NOTONLINE: '%PREFIX% &cDieser Spieler ist nicht Online!'
     NOTBANNED: '%PREFIX% &cDieser Spieler ist nicht gebannt!'
     ISBANNED: '%PREFIX% &cDieser Spieler ist bereits gebannt!'

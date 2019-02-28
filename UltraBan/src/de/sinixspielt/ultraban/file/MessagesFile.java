@@ -28,6 +28,7 @@ public class MessagesFile extends FileBase {
 		cfg.addDefault("CONIG.WRONGCOMMAND.BAN", "%PREFIX% &8» &7Verwendung &e/ban <Name> <Grund>");
 		cfg.addDefault("CONIG.WRONGCOMMAND.UNBAN", "%PREFIX% &8» &7Verwendung &e/unban <Name>");
 		cfg.addDefault("CONIG.WRONGCOMMAND.KICK", "%PREFIX% &8» &7Verwendung &e/kick <Name>");
+		cfg.addDefault("CONIG.WRONGCOMMAND.TEMPBAN", "%PREFIX% &8» &7Verwendung &e/tempban <Spieler> <Zeit> <Form(Sekunden=s, Minuten=m, Stunden=h, Tage=d> <Grund>");
 		//------------------------------------------------------------------------------------------------\\
 		List<String> banscreen = new ArrayList<String>();
 		banscreen.add("&8-= &eServername &8=-");
@@ -40,6 +41,20 @@ public class MessagesFile extends FileBase {
 		cfg.addDefault("CONIG.BANSYSTEM.BANPLAYER.BANSCREEN", banscreen);
 		cfg.addDefault("CONIG.BANSYSTEM.BANPLAYER.BANMESSAGE", "%PREFIX% &7Du hast &6%PLAYER% &7wegen &e%REASON% &7gebannt!");
 		cfg.addDefault("CONIG.BANSYSTEM.BANPLAYER.PLAYERBYPASS", "%PREFIX% &cDieser Spieler kann nicht gebannt werden!");
+		//------------------------------------------------------------------------------------------------\\
+		List<String> tempscreen = new ArrayList<String>();
+		tempscreen.add("&8-= &eServername &8=-");
+		tempscreen.add("%NewLine% %NewLine%");
+		tempscreen.add("&7Du wudrest vom Zeitlich vom Server gebannt!");
+		tempscreen.add("%NewLine% %NewLine%");
+		tempscreen.add("&7Grund: %REASON%");
+		tempscreen.add("%NewLine% %NewLine%");
+		tempscreen.add("&7Verbleibende Zeit: &7%TIME%");
+		tempscreen.add("%NewLine% %NewLine%");
+		tempscreen.add("&8-= &eServername &8=-");
+		cfg.addDefault("CONIG.BANSYSTEM.TEMPBANPLAYER.BANSCREEN", banscreen);
+		cfg.addDefault("CONIG.BANSYSTEM.TEMPBANPLAYER.BANMESSAGE", "%PREFIX% &7Du hast &6%PLAYER% &7wegen &e%REASON% &7für &6%TIME% &7gebannt!");
+		cfg.addDefault("CONIG.BANSYSTEM.TEMPBANPLAYER.PLAYERBYPASS", "%PREFIX% &cDieser Spieler kann nicht gebannt werden!");
 		//------------------------------------------------------------------------------------------------\\
 		List<String> kickscreen = new ArrayList<String>();
 		kickscreen.add("&8-= &eServername &8=-");

@@ -22,6 +22,9 @@ public class ConfigFile extends FileBase {
 		
 		cfg.addDefault("CONIG.KICK.USEPERMISSION", "ultraban.kick");
 		cfg.addDefault("CONIG.KICK.BYPASSPERMISSION", "ultraban.kick.bypass");
+		
+		cfg.addDefault("CONIG.TEMPBAN.USEPERMISSION", "ultraban.tempban");
+		cfg.addDefault("CONIG.TEMPBAN.BYPASSPERMISSION", "ultraban.tempban.bypass");
 		cfg.options().copyDefaults(true);
 		saveConfig();
 	}

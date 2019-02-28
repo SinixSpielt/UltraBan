@@ -7,6 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import de.sinixspielt.ultraban.commands.CommandBan;
 import de.sinixspielt.ultraban.commands.CommandKick;
+import de.sinixspielt.ultraban.commands.CommandTempban;
 import de.sinixspielt.ultraban.commands.CommandUnban;
 import de.sinixspielt.ultraban.file.FileManager;
 import de.sinixspielt.ultraban.listener.PlayerListener;
@@ -41,6 +42,7 @@ public class Main extends JavaPlugin {
 		getCommand("ban").setExecutor(new CommandBan());
 		getCommand("unban").setExecutor(new CommandUnban());
 		getCommand("kick").setExecutor(new CommandKick());
+		getCommand("tempban").setExecutor(new CommandTempban());
 	}
 
 	private boolean loadSQL() {
