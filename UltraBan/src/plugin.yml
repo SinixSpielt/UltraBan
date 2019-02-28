@@ -1,0 +1,13 @@
+name: UltraBan
+version: 1.0
+author: SinixSpielt
+
+main: de.sinixspielt.ultraban.Main
+
+commands:
+  ban:
+    description: Ban a Player
+  unban:
+    description: Unban a Player
+  kick:
+    description: Kick a Player from Server

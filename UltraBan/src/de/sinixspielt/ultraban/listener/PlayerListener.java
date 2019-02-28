@@ -30,8 +30,8 @@ public class PlayerListener implements Listener{
 	@EventHandler (priority = EventPriority.MONITOR)
 	public void onAsyncPreLogin(AsyncPlayerPreLoginEvent e) {
 		UUID uuid = OptionManager.getUUIDFromPlayer(e.getName());
-		if (BanManager.isBanned(OptionManager.getUUIDFromPlayer(e.getName()))) {
-			if (BanManager.isPERMANENTBanned(uuid).intValue() == 1) {
+		if (Main.getBanManager().isBanned(OptionManager.getUUIDFromPlayer(e.getName()))) {
+			if (Main.getBanManager().isPERMANENTBanned(uuid).intValue() == 1) {
 				String msg = Main.getFileManager().getMessagesFile().getMessage("CONIG.BANSYSTEM.BANPLAYER.BANSCREEN");
 				msg = msg.replace("%REASON%", BanManager.getReason(uuid));
 				e.disallow(AsyncPlayerPreLoginEvent.Result.KICK_BANNED, msg);
