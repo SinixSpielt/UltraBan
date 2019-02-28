@@ -8,6 +8,7 @@
 
 ![img](http://185.254.97.107/spigot/UltraBan/Todo.png)
  - /tempban [Player] [Time] [TimeFormat] [Reason]
+ - API
  
 ![img](http://185.254.97.107/spigot/UltraBan/Commands.png)
  - /ban [Player]
