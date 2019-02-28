@@ -64,6 +64,7 @@ public class CommandTempban implements CommandExecutor {
 				BanManager.banPlayer(uuid, playername, false, reason, seconds, p.getName());
 				String playermessage = Main.getFileManager().getMessagesFile().getMessage("CONIG.BANSYSTEM.TEMPBANPLAYER.BANMESSAGE");
 				playermessage = playermessage.replace("%REASON%", reason);
+				playermessage = playermessage.replace("%TIME%", value + unitString);
 				playermessage = playermessage.replace("%PLAYER%", playername);
 				p.sendMessage(playermessage);
 	            return true;

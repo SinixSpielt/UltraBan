@@ -53,7 +53,7 @@ public class MessagesFile extends FileBase {
 		tempscreen.add("%NewLine% %NewLine%");
 		tempscreen.add("&8-= &eServername &8=-");
 		cfg.addDefault("CONIG.BANSYSTEM.TEMPBANPLAYER.BANSCREEN", banscreen);
-		cfg.addDefault("CONIG.BANSYSTEM.TEMPBANPLAYER.BANMESSAGE", "%PREFIX% &7Du hast &6%PLAYER% &7wegen &e%REASON% &7für &6%TIME% &7gebannt!");
+		cfg.addDefault("CONIG.BANSYSTEM.TEMPBANPLAYER.BANMESSAGE", "%PREFIX% &7Du hast &6%PLAYER% &7wegen &e%REASON% &7für&6%TIME% &7gebannt!");
 		//------------------------------------------------------------------------------------------------\\
 		List<String> kickscreen = new ArrayList<String>();
 		kickscreen.add("&8-= &eServername &8=-");
