@@ -1,8 +1,7 @@
 # UltraBan
 
 ![img](http://185.254.97.107/spigot/UltraBan/Todo.png)
- - Command
-  - /tempban <Player> <Time> <TimeFormat> <Reason>
+ - /tempban <Player> <Time> <TimeFormat> <Reason>
 
 ![img](http://185.254.97.107/spigot/UltraBan/Features.png)
  - UUID
