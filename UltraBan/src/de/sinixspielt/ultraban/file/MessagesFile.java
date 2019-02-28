@@ -54,7 +54,6 @@ public class MessagesFile extends FileBase {
 		tempscreen.add("&8-= &eServername &8=-");
 		cfg.addDefault("CONIG.BANSYSTEM.TEMPBANPLAYER.BANSCREEN", banscreen);
 		cfg.addDefault("CONIG.BANSYSTEM.TEMPBANPLAYER.BANMESSAGE", "%PREFIX% &7Du hast &6%PLAYER% &7wegen &e%REASON% &7für &6%TIME% &7gebannt!");
-		cfg.addDefault("CONIG.BANSYSTEM.TEMPBANPLAYER.PLAYERBYPASS", "%PREFIX% &cDieser Spieler kann nicht gebannt werden!");
 		//------------------------------------------------------------------------------------------------\\
 		List<String> kickscreen = new ArrayList<String>();
 		kickscreen.add("&8-= &eServername &8=-");
@@ -71,7 +70,6 @@ public class MessagesFile extends FileBase {
 		cfg.addDefault("CONIG.BANSYSTEM.UNBANPLAYER", "%PREFIX% &7Du hast &e%PLAYER% &7entbannt!");
 		cfg.options().copyDefaults(true);
 		saveConfig();
-		
 	}
 	
 	public String getMessage(String path){

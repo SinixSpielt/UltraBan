@@ -13,10 +13,6 @@ import de.sinixspielt.ultraban.manager.BanManager;
 import de.sinixspielt.ultraban.utils.BanUnit;
 import de.sinixspielt.ultraban.utils.OptionManager;
 
-/*
-Class created on 28.02.2019 by SinixSpielt
- * */
-
 public class CommandTempban implements CommandExecutor {
 
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {

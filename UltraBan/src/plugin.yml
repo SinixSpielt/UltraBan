@@ -11,4 +11,4 @@ commands:
   kick:
     description: Kick a Player from Server
   tempban:
-    description: Ban a Player for Time
+    description: Ban a Player for Time from Server

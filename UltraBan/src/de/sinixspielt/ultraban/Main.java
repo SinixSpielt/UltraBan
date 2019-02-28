@@ -14,6 +14,10 @@ import de.sinixspielt.ultraban.listener.PlayerListener;
 import de.sinixspielt.ultraban.manager.BanManager;
 import de.sinixspielt.ultraban.mysql.SQLManager;
 
+/*
+Class created on 28.02.2019 by SinixSpielt
+ * */
+
 public class Main extends JavaPlugin {
 
 	public static Main instance;
