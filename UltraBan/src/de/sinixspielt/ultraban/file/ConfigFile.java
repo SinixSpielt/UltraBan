@@ -27,5 +27,6 @@ public class ConfigFile extends FileBase {
 		cfg.addDefault("CONIG.TEMPBAN.BYPASSPERMISSION", "ultraban.tempban.bypass");
 		cfg.options().copyDefaults(true);
 		saveConfig();
+		
 	}
 }

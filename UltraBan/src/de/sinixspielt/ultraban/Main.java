@@ -44,6 +44,7 @@ public class Main extends JavaPlugin {
 		getCommand("kick").setExecutor(new CommandKick());
 		getCommand("tempban").setExecutor(new CommandTempban());
 	}
+	
 
 	private boolean loadSQL() {
 		FileConfiguration cfg = fileManager.getDatabaseFile().getConfig();

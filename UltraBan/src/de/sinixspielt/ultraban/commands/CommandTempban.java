@@ -25,7 +25,6 @@ public class CommandTempban implements CommandExecutor {
 			sender.sendMessage("Dieser Befehl ist nur für Spieler bestimmt.");
 			return true;
 		}
-
 		Player p = (Player) sender;
 
 		if (!(p.hasPermission(Main.getFileManager().getConfigFile().getConfig().getString("CONIG.TEMPBAN.USEPERMISSION")))) {
@@ -39,7 +38,6 @@ public class CommandTempban implements CommandExecutor {
 		}
 
 		if (args.length >= 4) {
-
 			String playername = args[0];
 			UUID uuid = OptionManager.getUUIDFromPlayer(playername);
 			

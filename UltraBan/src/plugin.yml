@@ -1,7 +1,6 @@
 name: UltraBan
 version: 1.0
 author: SinixSpielt
-
 main: de.sinixspielt.ultraban.Main
 
 commands:

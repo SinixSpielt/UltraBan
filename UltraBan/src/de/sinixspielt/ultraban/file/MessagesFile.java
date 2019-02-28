@@ -71,6 +71,7 @@ public class MessagesFile extends FileBase {
 		cfg.addDefault("CONIG.BANSYSTEM.UNBANPLAYER", "%PREFIX% &7Du hast &e%PLAYER% &7entbannt!");
 		cfg.options().copyDefaults(true);
 		saveConfig();
+		
 	}
 	
 	public String getMessage(String path){
