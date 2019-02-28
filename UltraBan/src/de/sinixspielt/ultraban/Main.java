@@ -13,8 +13,8 @@ import de.sinixspielt.ultraban.listener.PlayerListener;
 import de.sinixspielt.ultraban.manager.BanManager;
 import de.sinixspielt.ultraban.mysql.SQLManager;
 
-public class Main extends JavaPlugin{
-	
+public class Main extends JavaPlugin {
+
 	public static Main instance;
 	public static FileManager fileManager;
 	public static SQLManager sqlManager;
@@ -31,18 +31,18 @@ public class Main extends JavaPlugin{
 		loadListeners();
 		loadCommands();
 	}
-	
+
 	private void loadListeners() {
 		PluginManager load = Bukkit.getPluginManager();
 		load.registerEvents(new PlayerListener(), this);
 	}
-	
+
 	private void loadCommands() {
 		getCommand("ban").setExecutor(new CommandBan());
 		getCommand("unban").setExecutor(new CommandUnban());
 		getCommand("kick").setExecutor(new CommandKick());
 	}
-	
+
 	private boolean loadSQL() {
 		FileConfiguration cfg = fileManager.getDatabaseFile().getConfig();
 		String host = cfg.getString("DATABASE.HOST");
@@ -56,21 +56,21 @@ public class Main extends JavaPlugin{
 
 	@Override
 	public void onDisable() {
-		
+
 	}
-	
+
 	public static Main getInstance() {
 		return instance;
 	}
-	
+
 	public static SQLManager getSqlManager() {
 		return sqlManager;
 	}
-	
+
 	public static FileManager getFileManager() {
 		return fileManager;
 	}
-	
+
 	public static BanManager getBanManager() {
 		return banManager;
 	}
