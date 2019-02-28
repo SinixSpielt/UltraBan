@@ -16,15 +16,15 @@ import de.sinixspielt.ultraban.mysql.SQLManager;
 public class Main extends JavaPlugin{
 	
 	public static Main instance;
-	public static SQLManager sqlManager;
 	public static FileManager fileManager;
+	public static SQLManager sqlManager;
 	public static BanManager banManager;
 
 	@Override
 	public void onEnable() {
+		instance = this;
 		fileManager = new FileManager();
 		if (!loadSQL()) {
-			Bukkit.broadcastMessage("§8[§4UltraBan§8] §cKeine Datenbank Verbindung! §7Bitte verbinde die Datenbank um das Plugin zu nutzen!");
 			return;
 		}
 		banManager = new BanManager();

@@ -1,0 +1,9 @@
+CONIG:
+  BANSYSTEM:
+    PREFIX: '&8[&cUltraBan&8]'
+  BAN:
+    USEPERMISSION: ultraban.ban
+    BYPASSPERMISSION: ultraban.ban.bypass
+  KICK:
+    USEPERMISSION: ultraban.kick
+    BYPASSPERMISSION: ultraban.kick.bypass
