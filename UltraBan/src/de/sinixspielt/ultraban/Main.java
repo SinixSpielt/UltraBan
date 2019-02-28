@@ -63,7 +63,7 @@ public class Main extends JavaPlugin {
 
 	@Override
 	public void onDisable() {
-
+		instance = null;
 	}
 
 	public static Main getInstance() {
