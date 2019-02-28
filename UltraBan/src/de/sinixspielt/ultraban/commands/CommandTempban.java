@@ -31,12 +31,10 @@ public class CommandTempban implements CommandExecutor {
 			p.sendMessage(Main.getFileManager().getMessagesFile().getMessage("CONIG.BANSYSTEM.NOPERMISSION"));
 			return true;
 		}
-
 		if (args.length < 4) {
 			p.sendMessage(Main.getFileManager().getMessagesFile().getMessage("CONIG.WRONGCOMMAND.TEMPBAN"));
 			return true;
 		}
-
 		if (args.length >= 4) {
 			String playername = args[0];
 			UUID uuid = OptionManager.getUUIDFromPlayer(playername);
@@ -45,7 +43,6 @@ public class CommandTempban implements CommandExecutor {
 				p.sendMessage(Main.getFileManager().getMessagesFile().getMessage("CONIG.BANSYSTEM.NOMINECRAFTACCOUNT"));
 				return true;
 			}
-			
 			long value;
 			try {
 				value = Integer.valueOf(args[1]).intValue();
@@ -53,7 +50,6 @@ public class CommandTempban implements CommandExecutor {
 				p.sendMessage(Main.getFileManager().getMessagesFile().getMessage("CONIG.WRONGCOMMAND.TEMPBAN"));
 				return true;
 			}
-			
 			if (BanManager.isBanned(uuid)) {
 				p.sendMessage(Main.getFileManager().getMessagesFile().getMessage("CONIG.BANSYSTEM.ISBANNED"));
 				return true;
